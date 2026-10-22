@@ -1,1 +1,42 @@
 @import "tailwindcss";
+
+.feature-card {
+    background: #e0e0e0;
+    border-radius: 15px;
+    padding: 30px;
+    width: 750px;
+    box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 16px 16px 32px #bebebe, -16px -16px 32px #ffffff;
+}
+
+.buz:hover{
+animation: buzz .3s alternate-reverse infinite;
+}
+
+.active{
+    background-color: #7bf1a84d;
+    border: 1px solid var(--color-green-400);
+    border-radius: 12px;
+}
+
+@keyframes buzz {
+    0%{
+        transform: rotate(370deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(370deg);
+    }
+}
