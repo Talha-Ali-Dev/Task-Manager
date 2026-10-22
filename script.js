@@ -27,7 +27,6 @@ taskForm.addEventListener("submit", (e) => {
                         <img src="assets/icons/trash.png" alt="" class="buz cursor-pointer" data-target="${task}" id="taskDel">
                     </div>
                 </div>
-
 `
     taskForm.reset();
 
