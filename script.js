@@ -5,6 +5,7 @@ const countPending = document.querySelector(".count-pending");
 const countComplete = document.querySelector(".count-complete");
 
 function updateCounts() {
+
     const boxes = allTasks.querySelectorAll(".taskCheckBox");
     const completed = allTasks.querySelectorAll(".taskCheckBox:checked").length;
 
@@ -32,12 +33,11 @@ taskForm.addEventListener("submit", (e) => {
                 </div>
             </div>
             <div>
-                <img src="assets/icons/trash.png" alt="Delete" class="taskDel cursor-pointer" data-target="${id}">
+                <img src="assets/icons/trash.png" alt="Delete" class="taskDel cursor-pointer buz" data-target="${id}">
             </div>
         </div>
     `);
 
-    // textContent keeps user input from being parsed as HTML
     document.querySelector(`#${id} h2`).textContent = text;
 
     taskForm.reset();
