@@ -62,8 +62,3 @@ allTasks.addEventListener("click", (e) => {
 });
 
 updateCounts();
-
-// allTasks.addEventListener("click", (e) => {
-//     if (!e.target.classList.contains("task-del")) return;
-//     document.getElementById(e.target.dataset.target)?.remove();
-// });
